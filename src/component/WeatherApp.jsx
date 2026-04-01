@@ -1,7 +1,7 @@
 import React from "react";
 import { useWeatherData } from "../hooks/useWeatherData";
 import SearchBar from "./SearchBar";
-import WeatherInfo from "./WeatherInfo_temp";
+import WeatherInfo from "./WeatherInfo.jsx";
 import TemperatureChart from "./TemperatureChart";
 import InsightBox from "./InsightBox";
 
@@ -26,9 +26,9 @@ export default function WeatherApp() {
         loading={loading}
       />
       {loading && <div className="loading-text">⏳ Loading weather data...</div>}
-      <WeatherInfo weather={weather} />
-      <TemperatureChart forecast={forecast} />
-      <InsightBox insight={insight} />
+      {weather && <WeatherInfo weather={weather} />}
+      {forecast && <TemperatureChart forecast={forecast} />}
+      {insight && <InsightBox insight={insight} />}
     </div>
   );
 }
