@@ -1,7 +1,7 @@
 import React from "react";
 import { useWeatherData } from "../hooks/useWeatherData";
 import SearchBar from "./SearchBar";
-import WeatherInfo from "./WeatherInfo";
+import WeatherInfo from "./WeatherInfo_temp";
 import TemperatureChart from "./TemperatureChart";
 import InsightBox from "./InsightBox";
 
