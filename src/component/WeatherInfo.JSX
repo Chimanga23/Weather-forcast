@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Weatherinfo({ weather }) {
+export default function WeatherInfo({ weather }) {
   if (!weather) return null;
 
   return (
